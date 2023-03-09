@@ -1,0 +1,31 @@
+.fav-header {
+    border-bottom: 2px solid black;
+}
+
+.fav-nav {
+    position:relative;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0%;
+    padding-top: 10px;
+}
+
+.fav-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.fav-card {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.fav-list {
+    text-align: center;
+    list-style-type: none;
+    padding: 0px 5px;
+}
