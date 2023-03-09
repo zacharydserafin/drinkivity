@@ -2,7 +2,7 @@
 header {
     display: block;
     justify-content: center;
-    padding: 8%;
+    padding: 4%;
 }
 
 body {
@@ -21,11 +21,11 @@ h2 {
     margin: 
 }
 
-button {
+.button-xlarge{
     display: inline;
-    justify-content: center;
+    font-size: 250%;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
