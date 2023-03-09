@@ -5,23 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/favoritestyle.css">
     <title>Favorites Page</title>
 </head>
 <body>
-    <header>
+    <header class="fav-header">
         <h1>Drinkivity</h1>
+        <nav class="pure-menu pure-menu-horizontal fav-nav">
+            <a href="#" class="pure-menu-heading pure-menu-link">NAVIGATION</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="./homepage.html" class="pure-menu-link">Home</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="./landingpage.html" class="pure-menu-link">Landing</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="./favoritespage.html" class="pure-menu-link">Favorites</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <div>
-            <section>
+        <div class="pure-g fav-container">
+            <section class="pure-u-10-24 fav-card">
                 <h2>Favorite Activities</h2>
-                <ul></ul>
+                <ul class="fav-list">
+
+                </ul>
             </section>
-            <section>
+            <section class="pure-u-10-24 fav-card">
                 <h2>Favorite Drinks</h2>
-                <ul></ul>
+                <ul class="fav-list">
+
+                </ul>
             </section>
         </div>
     </main>
