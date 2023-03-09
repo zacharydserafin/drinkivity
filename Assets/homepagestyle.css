@@ -1,0 +1,40 @@
+
+header {
+    display: block;
+    justify-content: center;
+    padding: 4%;
+}
+
+body {
+    display: flex;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 600%;
+    margin: 2% 6;
+    text-align: center;
+}
+
+h2 {
+    font-size: 250%;
+    margin: 
+}
+
+.button-xlarge{
+    display: inline;
+    font-size: 250%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
