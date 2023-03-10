@@ -3,6 +3,8 @@ var boredURL = "https://www.boredapi.com/api/activity";
 
 var activityBox = document.getElementById("activity-container");
 var drinkBox = document.getElementById("drink-container");
+var activityButton = document.getElementById("activity-button");
+var drinkButton = document.getElementById("drink-button");
 
 function grabDrink() {
     fetch (drinkURL)
@@ -40,6 +42,23 @@ function grabActivity() {
     }
 }
 
-grabDrink();
-grabActivity();
+function init() {
+    grabDrink();
+    grabActivity();
+}
+
+activityButton.addEventListener("click", function() {
+    activityBox.children[1].textContent = "";
+    grabActivity();
+});
+
+drinkButton.addEventListener("click", function() {
+    drinkBox.children[1].textContent = "";
+    grabDrink();
+});
+
+
+init();
+
+
 
