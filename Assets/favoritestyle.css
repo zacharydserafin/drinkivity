@@ -1,5 +1,5 @@
 .fav-header {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid honeydew;
 }
 
 
@@ -7,8 +7,35 @@ header h1 {
     text-align: center;
     margin: 0%;
     padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #7d7eef;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
+a {
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-size: 175%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #94dfdf, #00bfff);
+  }
+  
 .fav-container {
     display:flex;
     justify-content: space-between;
@@ -19,7 +46,13 @@ header h1 {
     margin: 15px;
     margin-top:5%;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid honeydew;
+    border-radius: 10px;
+    height: 540px;
+}
+
+html {
+    overflow-y: hidden;
 }
 
 .fav-list {
