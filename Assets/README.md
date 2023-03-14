@@ -10,17 +10,17 @@ or learn to make.
 
 To start please click the "So, what are we doing tonight?" button. 
 
-![alt text](assets/images/Home%20page%20screenshot.jpg)
+![alt text](assets/css/images/Home%20page%20screenshot.jpg)
 
 This will bring you to our landing page and have an automatically generated activity and drink. If you do not like what is listed, 
 feel free to click the generate button to get a new activity or drink. If you like one in particular and would like to come back to
  it you can add it to your favorites!
 
-![alt text](assets/images/landing%20page%20screen%20shot.jpg)
+![alt text](assets/css/images/landing%20page%20screen%20shot.jpg)
 
 On the favorites page you can see all of your previously favorited items!
 
-![alt text](assets/images/favorite%20page%20screenshot.jpg)
+![alt text](assets/css/images/favorite%20page%20screenshot.jpg)
 
 
 
