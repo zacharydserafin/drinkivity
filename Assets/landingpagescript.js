@@ -5,8 +5,8 @@ var activityBox = document.getElementById("activity-container");
 var drinkBox = document.getElementById("drink-container");
 var activityButton = document.getElementById("activity-button");
 var drinkButton = document.getElementById("drink-button");
-var activitysaveButton = document.getElementById("activity-save");
-var drinksaveButton = document.getElementById("drink-save");
+var activitySaveButton = document.getElementById("activity-save");
+var drinkSaveButton = document.getElementById("drink-save");
 
 function grabDrink() {
     fetch (drinkURL)
@@ -22,7 +22,7 @@ function grabDrink() {
     function renderDrink(randomDrink) {
         var drinkText = document.createElement("p");
         drinkText.textContent = randomDrink;
-        drinkBox.insertBefore(drinkText, drinkBox.children[1]);
+        drinkBox.appendChild(drinkText);
     }
 }
 
@@ -40,18 +40,18 @@ function grabActivity() {
     function renderActivity(randomAct) {
         var activityText = document.createElement("p");
         activityText.textContent = randomAct;
-        activityBox.insertBefore(activityText, activityBox.children[1]);
+        activityBox.appendChild(activityText);
     }
 }
 
-function updateFavoriteactivity(activity) {
+function updateFavoriteActivity(activity) {
 
     var activityList = JSON.parse(localStorage.getItem("activityList") || "[]");
     activityList.push(activity);
     localStorage.setItem("activityList", JSON.stringify(activityList));
     }
 
-function updateFavoritedrink(drink) {
+function updateFavoriteDrink(drink) {
 
     var drinkList = JSON.parse(localStorage.getItem("drinkList") || "[]");
     drinkList.push(drink);
@@ -73,15 +73,15 @@ drinkButton.addEventListener("click", function() {
     grabDrink();
 });
 
-activitysaveButton.addEventListener("click", function() {
+activitySaveButton.addEventListener("click", function() {
     var activity = activityBox.children[1].textContent;
-    updateFavoriteactivity(activity);
+    updateFavoriteActivity(activity);
   });
   
 
-  drinksaveButton.addEventListener("click", function() {
+  drinkSaveButton.addEventListener("click", function() {
     var drink = drinkBox.children[1].textContent;
-    updateFavoritedrink(drink);
+    updateFavoriteDrink(drink);
   });
 
 init();

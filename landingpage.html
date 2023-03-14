@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/landingpagestyle.css">
-    <title>landingPage</title>
+    <title>Drinkivity - What Are We Doing Tonight?</title>
 </head>
 <body>
-    <header>
+    <header class="land-header">
             <nav class="pure-menu pure-menu-horizontal">
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -28,26 +28,28 @@
                     </li>
                 </ul>
             </nav>
-        <h1 style="text-align: center;">Drinkivity</h1>
+        <h1>Drinkivity</h1>
     </header>
-    <div style="display: flex;">
-        <section id="activity-container" style="flex: 1; border: 1px solid black;">
-            <h2>Activity Info</h2>
-            <button id="activity-save">Save</button>
-        </section>
-        <section>
-            <button id="activity-button">Generate</button>
-        </section>
-    </div>
-    <div style="display: flex;">
-        <section id="drink-container" style="flex: 1; border: 1px solid black">
-            <h2>Drink Info</h2>
-            <button id="drink-save">Save</button>
-        </section>
-        <section>
-            <button id="drink-button">Generate</button>
-        </section>
-    </div>
+        <div class="land-container">
+            <div class="land-card">
+                <section id="activity-container">
+                    <h2>Activity Info</h2>
+                </section>
+                <section class="land-buttons">
+                    <button id="activity-save">Save to Favorites</button>
+                    <button id="activity-button">Generate New Activity</button>
+                </section>
+            </div>
+            <div class="land-card">
+                <section id="drink-container">
+                    <h2>Drink Info</h2>
+                </section>
+                <section class="land-buttons">
+                    <button id="drink-save">Save to Favorites</button>
+                    <button id="drink-button">Generate New Drink</button>
+                </section>
+            </div>
+        </div>
 
 <script src="./Assets/landingpagescript.js"></script>
 </body>

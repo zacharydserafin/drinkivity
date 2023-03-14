@@ -1,0 +1,28 @@
+.land-header {
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0%;
+    padding-top: 10px;
+}
+
+.land-container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.land-card {
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    margin: 15px;
+    margin-top: 5%;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.land-buttons button {
+    margin: 2%;
+}
