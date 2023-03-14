@@ -1,11 +1,46 @@
 .land-header {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid honeydew;
 }
 
 header h1 {
     text-align: center;
     margin: 0%;
     padding-top: 10px;
+    font-size: 300%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #7d7eef;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #94dfdf, #00bfff);
+  }
+  
+a {
+    background-color: whitesmoke;
+}
+
+p {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+h2 {
+    font-size: 250%;
 }
 
 .land-container {
@@ -16,13 +51,17 @@ header h1 {
 .land-card {
     text-align: center;
     width: 50%;
-    height: 300px;
+    height: 540px;
     margin: 15px;
     margin-top: 5%;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid honeydew;
+    border-radius: 10px;
 }
 
 .land-buttons button {
     margin: 2%;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px honeydew;
 }

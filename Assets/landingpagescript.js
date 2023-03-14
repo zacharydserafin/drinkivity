@@ -64,12 +64,12 @@ function init() {
 }
 
 activityButton.addEventListener("click", function() {
-    activityBox.children[1].textContent = "";
+    activityBox.children[1].remove();
     grabActivity();
 });
 
 drinkButton.addEventListener("click", function() {
-    drinkBox.children[1].textContent = "";
+    drinkBox.children[1].remove();
     grabDrink();
 });
 
