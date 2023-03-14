@@ -2,9 +2,6 @@
     border-bottom: 2px solid black;
 }
 
-.fav-nav {
-    position:relative;
-}
 
 header h1 {
     text-align: center;
@@ -20,6 +17,7 @@ header h1 {
 .fav-card {
     text-align: center;
     margin: 15px;
+    margin-top:5%;
     padding: 10px;
     border: 2px solid black;
 }
@@ -28,4 +26,13 @@ header h1 {
     text-align: center;
     list-style-type: none;
     padding: 0px 5px;
+}
+
+@media screen and (max-width: 648px) {
+    .fav-container {
+        justify-content: center;
+    }
+    .fav-card {
+        width: 75%;
+    }
 }

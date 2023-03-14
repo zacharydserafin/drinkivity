@@ -1,8 +1,9 @@
 
 header {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 4%;
+    width: 100%;
 }
 
 body {
@@ -11,36 +12,40 @@ body {
 }
 
 h1 {
-    font-size: 600%;
-    margin: 2% 6;
+    font-size: 400%;
+    margin: 2% 6%;
     text-align: center;
 }
 
 h2 {
-    font-size: 265%;
-    margin: 
+    font-size: 150%;
+    text-align: center;
+    margin: 5%;
 }
 
-.button-xlarge{
-    display: inline;
-    font-size: 250%;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.button-xlarge, button {
+    position: fixed;
+    text-align: center;
+    width: 80%;
+    height: 20%;
+    left:50%;
+    margin-left: -40%;
+    bottom: 25%;
+    font-size:4.0vw;
 }
 
 footer {
     position: fixed;
-    right: 40%;
+    text-align: center;
+    width: 500px;
+    left:50%;
+    margin-left: -250px;
     bottom: 5px;
 }
-@media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
+
+@media screen and (max-width: 555px) {
+    .button-xlarge {
+        font-size: 5.0vw;
     }
-  
-    main {
-      max-width: 1200px;
-    }
-  }
+}
+
