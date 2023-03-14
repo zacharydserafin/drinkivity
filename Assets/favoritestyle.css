@@ -22,7 +22,7 @@ a {
 }
 
 h2 {
-    font-size: 175%;
+    font-size: 250%;
 }
 
 body::before {
@@ -31,7 +31,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
     z-index: -1;
     background: linear-gradient(to bottom, #94dfdf, #00bfff);
   }
@@ -48,11 +48,7 @@ body::before {
     padding: 10px;
     border: 2px solid honeydew;
     border-radius: 10px;
-    height: 540px;
-}
-
-html {
-    overflow-y: hidden;
+    min-height: 540px;
 }
 
 .fav-list {
@@ -68,4 +64,12 @@ html {
     .fav-card {
         width: 75%;
     }
+    body::before {
+        height: 300%;
+      }
+}
+
+p {
+    font-size: 150%;
+    font-weight: 600;
 }
